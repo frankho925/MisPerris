@@ -1,0 +1,222 @@
+
+.campa{
+    border-style : dotted;
+    border-radius: 5px;
+    border-color: black;
+    background-color: gainsboro; 
+    height: 80px;
+    width: 120px;
+}
+.formulario{
+    border-color: black;
+    border-spacing: 50px;
+    margin-left: 260px;
+    border-style: ridge;
+    padding-left: 200px;
+    background-color: gainsboro;
+    margin-right: 270px;
+    margin-top: 50px;
+    margin-bottom: -400px;
+
+
+}
+.form-label{
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    padding-right: 150px;
+}
+.form-header{
+    padding-left: 60px;
+    text-align: left;
+    font-family: 'Arial';
+    
+}
+.form-input{
+    width: auto;
+    height: 40px;
+    border-radius: 5px;
+    align-content: center;
+    border-color: #86d8bd;
+}
+.btn-submit{
+    
+    
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    border-color: #86d8bd;
+
+}
+.parrafo{
+    float: right;
+    width: 90%;
+    max-width: 480px;
+    padding-top: 25px;
+    margin: auto;
+    color: black;
+    font-family: Arial;
+}
+.parrafo1{
+    float: left;
+    max-width: 480px;
+    padding-top: 25px;
+    padding-right:  0px;
+    color: black;
+    font-family: Arial;
+}
+
+h1{
+font: bold 150% sans-serif;
+}
+h6{
+font: 90% sans-serif;
+}
+p .texto{
+font:50% sans-serif;
+}
+
+.pie{
+width:100%;
+height: 100%;
+height: 50px;
+margin-top: 500px;
+overflow: hidden;
+background: #d2dbd8;
+
+}
+.textPie{
+float:  left;
+color: gray;
+font:  70% arial;
+padding-left: 30px;
+padding-top: 10px
+}
+
+.contenedor{
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 50px;
+}
+#correo{
+    padding-right: 100px;
+    margin-left: -123px;
+}
+#nombre{
+    margin-left: -119px;
+    padding-right: 100px;
+}
+#rut{
+    padding-right: 100px;
+
+}
+#fecha{
+    padding-right: 132px;
+    margin-left: -140px;
+}
+#numero{
+    padding-right: 100px;
+    margin-left: -125px;
+}
+#regiones{
+    margin-left: -30px;
+    padding-right: -30px;
+}
+#comunas{
+    margin-left: -30px;
+    
+}
+#viviendas{
+    margin-left: -95px;
+}
+#btn{
+    margin-left: 130px;
+}
+
+
+
+@media screen and (max-width: 1073px)
+{
+
+.parrafo{
+    float: none;
+    width: 90%;
+    max-width: 480px;
+    padding-top: 25px;
+    margin: auto;
+}
+.parrafo1{
+        float: none;
+        max-width: 480px;
+        padding-top: 25px;
+        padding-right:  0px;
+        margin: auto;
+}
+
+.formulario{
+    margin: auto;
+    border-style: solid;
+    background-color: gainsboro;
+    padding-left: 100px;
+    padding-right: -200px;
+    float: left;
+    max-width: 480px;
+    
+}
+.campa{
+    display: none;
+}
+.form-header{
+    padding-left: 20px;
+}
+#correo{
+    padding-right: 100px;
+    margin-left: 0px;
+}
+#nombre{
+    margin-left: 0px;
+    padding-right: 100px;
+}
+#rut{
+    padding-right: 100px;
+
+}
+#fecha{
+    padding-right: 132px;
+    margin-left: 0px;
+}
+#numero{
+    padding-right: 100px;
+    margin-left: 0px;
+}
+#regiones{
+    margin-left: 0px;
+    padding-right: -40px;
+}
+#comunas{
+    padding-right: 20px;
+    margin-left: 1px;
+    
+}
+#viviendas{
+    margin-left: 0px;
+}
+#btn{
+    margin-left: 0px;
+}
+
+section aside .texto{
+    text-align: left;
+}
+section aside h6{
+    text-align: left;
+}
+section aside h1{
+    text-align: left;
+}
+  .contenedor{
+        display: block;
+        margin: auto;
+    }
+
+}

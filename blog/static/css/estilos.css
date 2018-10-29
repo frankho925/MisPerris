@@ -1,0 +1,277 @@
+
+.flexslider{
+	width: 100%;
+	
+}
+
+.slides{
+	overflow: hidden;
+}
+
+.slides img{
+	width: 100%;
+	height: 300px;
+}
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex-control-nav{
+	width: 100%;
+	text-align: center;
+	position: block;
+	bottom: 5%;
+	z-index: 999;
+}
+
+.flex-control-nav li{
+	display: inline-block;
+	margin: 0 6px;
+}
+
+.flex-control-nav li a{
+	display: block;
+	background: #777777;
+	width: 12px;
+	height: 12px;
+	border-radius: 12px;
+	text-indent: -9999px;
+}
+
+.flex-control-nav li a:hover{
+	background: #2E2E2E;
+}
+
+.flex-control-nav li a.flex-active{
+	background: #2E2E2E;	
+}
+
+.flex-direction-nav a{
+	display: block;
+	text-decoration: none;
+	position: block;
+	top: 50%;
+	z-index: 999;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+body{
+	background:#fffffa;
+}
+.sub1{
+	color: black;
+}
+.sub2{
+	color: black;
+}
+
+
+
+header{
+	width:100%;
+	height: 99px;
+	overflow: hidden;
+	background: #86d8bd;
+	margin-bottom: 0px;
+	position: block;
+	
+
+}
+
+.wrapper{
+		width: 90%;
+		max-width: 1000px;
+		margin: auto;
+		font-family: 'Courier New';
+
+}
+
+header .logo{
+	
+	line-height: 100px;
+	float: left;
+	margin-top: 30px; 
+	
+}
+header nav{
+	float: right;
+	line-height: 120px;
+}
+header nav a{
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	line-height: normal;
+	font-size: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+
+}
+
+header nav a:hover{
+	background: #93c4a9;
+	border-radius: 50px;
+
+}
+
+
+.contenedor{
+	margin: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: #86d8bd;
+	border-color: #86d8bd;
+	border-left: -50px;
+	
+}
+
+
+@media screen and (max-width: 920px){
+    header .logo,
+    header nav{
+        width:100%;
+        text-align: center;
+
+    }
+    header .logo{
+        padding-top: 23px;
+    }
+	header nav a{
+		display: inline-block;
+		color: #fff;
+		text-decoration: none;
+		padding: 10px 20px;
+		line-height: normal;
+		font-size: 20px;
+		font-size: 20px;
+		font-weight: bold;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease;
+	
+	}
+	
+	header nav a:hover{
+		background: #93c4a9;
+		border-radius: 50px;
+	
+	}
+
+    header{
+		height: auto;
+		width: auto;
+		position: none;
+		display: block;
+        margin-bottom: -5px;
+	}
+	
+	
+
+    .wrapper .logo,
+    .wrapper nav{
+        line-height: 50px;
+    }
+
+    .contenedor{
+    	display: block;
+    	margin: auto;
+    }
+	.flexslider{
+		width: 100%;
+		margin-top: 50px; 
+	}
+	
+	.slides{
+		overflow: hidden;
+	}
+	
+	.slides img{
+		width: 100%;
+		height: 300px;
+	}
+	
+	.slides,
+	.flex-control-nav,
+	.flex-direction-nav {
+	  margin: 0;
+	  padding: 0;
+	  list-style: none;
+	}
+	
+	.flex-control-nav{
+		width: 100%;
+		text-align: center;
+		position: block;
+		bottom: 5%;
+		z-index: 999;
+	}
+	
+	.flex-control-nav li{
+		display: inline-block;
+		margin: 0 6px;
+	}
+	
+	.flex-control-nav li a{
+		display: block;
+		background: #777777;
+		width: 12px;
+		height: 12px;
+		border-radius: 12px;
+		text-indent: -9999px;
+	}
+	
+	.flex-control-nav li a:hover{
+		background: #2E2E2E;
+	}
+	
+	.flex-control-nav li a.flex-active{
+		background: #2E2E2E;	
+	}
+	
+	.flex-direction-nav a{
+		display: block;
+		text-decoration: none;
+		position: relative;
+		top: 50%;
+		z-index: 999;
+		width: 40px;
+		height: 40px;
+		overflow: hidden;
+		opacity: 0;
+		-webkit-transition: all 0.3s ease-in-out;
+	  -moz-transition: all 0.3s ease-in-out;
+	  -ms-transition: all 0.3s ease-in-out;
+	  -o-transition: all 0.3s ease-in-out;
+	  transition: all 0.3s ease-in-out;
+	}
+	
+	.flex-caption p{
+		font-family: Lato;
+		position: block;
+		top: 50%;
+		text-align: center;
+		width: 100%;
+		font-size: 45px;
+		color: #fff;
+		font-weight: bold;
+	}
+	
+}

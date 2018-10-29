@@ -1,0 +1,119 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>MIS PERRIS-CONTACTOS</title>
+    <meta charset="UTF-8">
+    
+	<link href="{%static 'img/animal.ico' %}" type="img/x-icon" rel="shortcut icon"/>
+	<link href="{% static 'css/estilos.css' %}" type="text/css" rel="stylesheet" />
+    <link href="{% static 'css/ventana.css' %}" type="text/css" rel="stylesheet" />
+    <link href="{% static 'css/body.css' %}"type="text/css" rel="stylesheet" />
+    <link href="{% static 'css/flexslider.css' %}" type="text/css" rel="stylesheet">
+			
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+			<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+			<script src="{% static 'js/jquery.flexslider.js '%}"></script>
+			<script type="text/javascript" >
+		  	$(window).load(function() {
+		    $('.flexslider').flexslider({
+		    	touch: true,
+		    	pauseOnAction: false,
+		    	pauseOnHover: false,
+		   	 });
+		 	});
+            </script>
+            <script src="{% static 'js/validar.js' %}" type="text/javascript">
+            
+            </script>
+</head>
+
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="logo" >
+				<img src="{% static 'img/logo.png'%}" alt ="Duoc" width="250" height="50" />
+            </div>
+            
+		<label class="icon-menu" for="menu-bar"></label>
+        <nav class="menu">
+        <a href="index.html" >Inicio</a>
+        <a href="QuienesSomos.html" >Quienes Somos</a>
+        <a href="http://127.0.0.1:8000/mascota" >Mascotas</a>
+        <a href="http://127.0.0.1:8000/contacto">Contactanos</a> 
+        </nav>
+		</div>
+	</header>
+		<nav class="ventana" style="height: auto;">
+			
+                <div class="formulario">
+                <form action="" method="POST" name="formulario1" class="form">
+                    {% csrf_token %}
+                    <div class="form-header">
+                        <h1 class="form-title"><img src="{%static 'img/animal.ico' %}" width="22" height="22">Adopta a un Amigo<img src="{%static 'img/animal.ico' %}" width="22" height="22"></h1>
+                    
+                    </div>
+                        <br>
+
+                        <label for="correo" class="form-label">Correo electronico :</label>
+                        <input type="email" name="correo" class="form-input"id="correo" placeholder="Digite su Correo" ><br>
+                        <br>
+                          
+                        <label for="rut" class="form-label">Rut :</label>
+                        <input type="text" name="rut" class="form-input"id="rut" placeholder="Digite su rut"  onkeypress=" return textorut(event)" ><br>
+                        <br>
+                        
+                        <label for="nombre" class="form-label">Nombre Completo :</label>
+                        <input type="text" name="nombre" class="form-input"id="nombre" placeholder="Digite su Nombre" onkeypress="return validarNombre(event)" ><br>
+                        <br>
+                        
+                        <label for="fecha" class="form-label">Fecha de Nacimiento :</label>
+                        <input type="date" name="fecha" class="form-input"id="fecha" placeholder="Ingrese su fecha de Nacimiento"  onkeypress="return checkdate(event)"><br>
+                        <br>
+        
+                        <label for="numero" class="form-label">Numero Telefonico :</label>
+                        <input type="text" name="numero" class="form-input"id="numero" placeholder="Digite su Numero" onkeypress="return validarNumero(event)"><br>
+                        <br>
+        
+                       
+
+                        <label for="region" class="form-label">Region :</label>
+                        <select id="regiones" name="region" class="form-input"></select><br>
+                        <br>
+
+                        <label for="ciudad" class="form-label">Ciudad :</label>
+                        <select id="comunas" name="ciudad"  class="form-input"></select><br>
+                        <br>
+
+                        <label for="vivienda" class="form-label">Tipo de vivenda:</label>
+                        <select name="vivienda" id="viviendas" class="form-input" > 
+                        <option class="" value="vi0 " style="color: gray;"> Seleccione Vivienda </option>
+                        <option class="" value="vi1"> Casa con patio grande</option>
+                        <option class="" value="vi2"> Casa con patio pequeño</option>
+                        <option class="" value="vi3"> Casa sin patio</option>
+                        <option class="" value="v4"> Departamento</option>
+                        </select>
+                        <br>
+                        <br>
+        
+        
+                        <input type="submit"  name="btn"  id="btn" class="btn-submit" value="Ingresar" onclick="validarNombre()"  >
+                        <br>
+                        <br>
+                        
+                </form>
+                
+            </div>
+            <div>
+                <footer class="pie ">
+                    <div class=" wrapper">
+                        <p class="textPie ">	Desarrollo web y Mobile,<br>
+                         Pagina web creado por Pablo velasquez y Franco ortiz </p>
+                    </div>
+                </footer>
+            </div>
+        </nav>
+        
+        
+</body>
+</html>

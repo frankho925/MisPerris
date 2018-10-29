@@ -1,0 +1,100 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>MIS PERRIS-Mascotas</title>
+    <meta charset="UTF-8">
+    
+	<link href="{%static 'img/animal.ico' %}" type="img/x-icon" rel="shortcut icon"/>
+	<link href="{% static 'css/estilos.css' %}" type="text/css" rel="stylesheet" />
+    <link href="{% static 'css/ventana.css' %}" type="text/css" rel="stylesheet" />
+    <link href="{% static 'css/body.css' %}"type="text/css" rel="stylesheet" />
+    <link href="{% static 'css/flexslider.css' %}" type="text/css" rel="stylesheet">
+			
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+			<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+			<script src="{% static 'js/jquery.flexslider.js '%}"></script>
+			<script type="text/javascript" >
+		  	$(window).load(function() {
+		    $('.flexslider').flexslider({
+		    	touch: true,
+		    	pauseOnAction: false,
+		    	pauseOnHover: false,
+		   	 });
+		 	});
+            </script>
+            <script src="{% static 'js/validar.js' %}" type="text/javascript">
+            
+            </script>
+</head>
+
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="logo" >
+				<img src="{% static 'img/logo.png'%}" alt ="Duoc" width="250" height="50" />
+            </div>
+            
+		<label class="icon-menu" for="menu-bar"></label>
+        <nav class="menu">
+        <a href="index.html" >Inicio</a>
+        <a href="QuienesSomos.html" >Quienes Somos</a>
+        <a href="http://127.0.0.1:8000/mascota" >Mascotas</a>
+        <a href="http://127.0.0.1:8000/contacto">Contactanos</a> 
+        </nav>
+		</div>
+	</header>
+		<nav class="ventana" style="height: auto;">
+			
+                <div class="formulario">
+                <form action="" method="POST" name="formulario1" class="form">
+                    {% csrf_token %}
+                    <div class="form-header">
+                        <h1 class="form-title"><img src="{%static 'img/animal.ico' %}" width="22" height="22">MASCOTAS<img src="{%static 'img/animal.ico' %}" width="22" height="22"></h1>
+                        
+                    </div>
+                        <br>
+            
+                        <label for="nombre" class="form-label">Nombre Mascota :</label>
+                        <input type="text" name="nombre" class="form-input"id="nombre" placeholder="Digite Nombre de Mascota" required><br>
+                        <br>
+
+                        <label for="raza" class="form-label">Raza:</label>
+                        <input type="text" name="raza" class="form-input"id="raza" placeholder="Digite su Raza" required ><br>
+                        <br>
+
+                        <label for="Descripcion" class="form-label">Descripcion :</label>
+                        <input type="text" name="descripcion" class="form-input"id="descripcion" placeholder="Descripcion" required ><br>
+                        <br>
+                        
+                        <label for="Imagen" class="form-label">Foto :</label>
+                        <input type="file" name="imagen" class="form-input" id="imagen" placeholder="imagen"  required>
+
+                        <label for="Estado" class="form-label">Estado:</label>
+                        <select name="estado" id="estado" class="form-input" required > 
+                        <option class="" value="es0 " style="color: gray;"> Seleccione Estado </option>
+                        <option class="" value="es1"> Rescatado</option>
+                        <option class="" value="es2"> Adoptado</option>
+                        <option class="" value="es3"> Disponible</option>
+                        </select>
+        
+                        <input type="submit"  name="btn"  id="btn" class="btn-submit" value="Ingresar" onclick="validacion()" >
+                        <br>
+                        <br>
+                        
+                </form>
+                
+            </div>
+            <div>
+                <footer class="pie ">
+                    <div class=" wrapper">
+                        <p class="textPie ">	Desarrollo web y Mobile,<br>
+                         Pagina web creado por Pablo velasquez y Franco ortiz </p>
+                    </div>
+                </footer>
+            </div>
+        </nav>
+        
+        
+</body>
+</html>
